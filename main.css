@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #210535;
 }
 
 :root{
@@ -15,9 +14,160 @@
 }
 
 html{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
     font-size: 62.5%;
     height: 100vh;
     width: 100vw;
+}
+
+/* --------- Starry background ------- */
+.stars, .shiny{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+}
+
+.stars{
+    background: var(--space1) url(img/stars.png) repeat top center;
+    z-index: -2;
+}
+
+.shiny{
+    background: transparent url(img/shiny.png) repeat top center;
+    z-index: -1;
+    animation: move-shiny 200s linear infinite;
+}
+
+/* --------- Beginscherm ----------- */
+.beginscherm--header{
+    max-width: 90vw;
+    height: 30vh;
+}
+
+.beginscherm--header--figure{
+    position: absolute;
+    right: 0;
+    margin: 2%;
+}
+
+.beginscherm--logo{
+    max-height: 25vh;
+}
+
+.beginscherm--main{
+    max-height: 60vh;
+}
+
+.beginscherm--section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.beginscherm--button{
+    padding: 1em 1.5em;
+    border: 0.1em black solid;
+    border-radius: 1em;
+    background-color: var(--alien1);
+    font-weight: 600;
+    font-size: 300%;
+}
+
+.beginscherm--button > a{
+    text-decoration: none;
+    color: black;
+}
+
+.beginscherm--footer{
+    height: 10vh;
+    margin: 0 2em;
+}
+
+.beginscherm--footer--p{
+    font-size: 230%;
+    text-align: center;
+}
+
+/* ---------- Verhaalscherm ---------- */
+.verhaalscherm--header{
+    width: 98vw;
+    height: 20vh;
+    margin: 1vh 1vw;
+}
+
+.verhaalscherm--header--figure{
+    position: absolute;
+    right: 0;
+    margin: 2%;
+}
+
+.verhaalscherm--logo{
+    max-height: 18vh;
+}
+
+.verhaalscherm--section{
+    width: 90vw;
+    height: 70vh;
+    margin: 5vh 5vw;
+    padding: 2em;
+    border: 1em solid var(--mars1);
+    border-radius: 1em;
+    background-color: var(--mars2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+}
+
+.verhaalscherm--section--p{
+    background-color: var(--mars2);
+    font-size: 175%;
+    text-align: center;
+}
+
+.verhaalscherm--date{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.verhaalscherm--tekst1{
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+.verhaalscherm--tekst2{
+    grid-area: 4 / 1 / 6 / 3;
+}
+
+.verhaalscherm--tekst3{
+    grid-area: 6 / 1 / 8 / 3;
+}
+
+/* ---------- Verhaalscherm2 ---------- */
+.verhaalscherm2--section{
+    width: 90vw;
+    height: 70vh;
+    margin: 5vh 5vw;
+    padding: 2em;
+    border: 1em solid var(--mars1);
+    border-radius: 1em;
+    background-color: var(--mars2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+}
+
+.verhaalscherm--tekst4{
+    grid-area: 9 / 1 / 10 / 3;
 }
 
 /* ---------- Main screen ---------- */
@@ -104,4 +254,13 @@ button{
     position: static;
     background-color: white;
     border: 1px solid black;
+}
+
+/* ------- Animations -------- */
+@keyframes move-shiny {
+    from{
+        background-position: 0 0 ;
+    }
+    to{background-position: -10000px 5000px
+    }
 }

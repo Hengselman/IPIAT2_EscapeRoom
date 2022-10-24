@@ -4,37 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    
-    <title>Inventory test</title>
+    <title>Escape from Mars</title>
 </head>
 <body>
-     <header>
-        <button onclick=clearStorage()>Delete storage</button>
+    <div class="stars"></div>
+    <div class="shiny"></div>
+    <header class="beginscherm--header">
+        <figure class="beginscherm--header--figure"><img class="beginscherm--logo" src="img/EfM_logo.png" alt="Escape from Mars logo foto"></figure>
     </header>
-    <main>
-        <section class="screen-main">
-            <svg class="svg-kamer-1" viewBox="0 0 1066 725">
-                <image width="1066" height="725" href="img/room_test2.jpg"></image>
-                <a href="#" onclick="storeItem1()">
-                  <rect x="87" y="309" fill="#fff" opacity="0" width="59" height="83"></rect>
-                </a>
-                <a href="#" onclick="storeItem2()">
-                  <rect x="617" y="269" fill="#fff" opacity="0" width="50" height="89"></rect>
-                </a>
-                <a href="#" onclick="storeItem3()">
-                  <rect x="961" y="194" fill="#fff" opacity="0" width="55" height="77"></rect>
-                </a>
-              </svg>
+    <main class="beginscherm--main">
+        <section class="beginscherm--section">
+            <button class="beginscherm--button"><a href="verhaalscherm1.html">Start hier!</a></button>
         </section> 
     </main>
-    <footer>
-         <section class="grid-inventory">
-            <figure class="itemBox" id="itemBox1"><img class="item_key" id="item1_key" src="img/item1_key.png" alt="Item 1"></figure>
-            <figure class="itemBox" id="itemBox2"><img class="item_key" id="item2_key" src="img/item2_key.png" alt="Item 2"></figure>
-            <figure class="itemBox" id="itemBox3"><img class="item_key" id="item3_key" src="img/item3_key.png" alt="Item 3"></figure>
-        </section>
+    <footer class="beginscherm--footer">
+        <p class="beginscherm--footer--p">Een online escaperoom gemaakt voor Hogeschool Leiden</p>
     </footer>
 </body>
-<script src="main.js"></script>
 </html>
