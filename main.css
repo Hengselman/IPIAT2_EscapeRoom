@@ -188,13 +188,31 @@ html{
     z-index: 0;
 }
 
+/* ----------- willem kamer ----------- */
+@media screen and (min-width: 400px) {
+    
+
+}
+.puzzelkamer--main{
+    width: 90vw;
+    height: 70vh;
+    margin: 5vh 5vw;
+    padding: 2em;
+    border: 1em solid var(--mars1);
+    border-radius: 1em;
+    background-color: var(--mars2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+}
 
 /* ------- Image map ------ */
 .svg-kamer-1{
     border: 10px solid var(--mars1);
     border-radius: 1em;
 }
-
 
 /* -------- Inventory System ------ */
 .grid-inventory{
