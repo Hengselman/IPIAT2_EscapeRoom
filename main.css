@@ -101,12 +101,14 @@ html{
     width: 98vw;
     height: 20vh;
     margin: 1vh 1vw;
+    z-index: -3;
 }
 
 .verhaalscherm--header--figure{
     position: absolute;
     right: 0;
     margin: 2%;
+    z-index: -1;
 }
 
 .verhaalscherm--logo{
@@ -123,7 +125,7 @@ html{
     background-color: var(--mars2);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 1em;
 }
@@ -148,6 +150,14 @@ html{
 
 .verhaalscherm--tekst3{
     grid-area: 6 / 1 / 8 / 3;
+}
+
+.verhaalscherm--figure{
+    grid-area: 8 / 1 / 9 / 3;
+}
+
+.verhaalscherm--arrow{
+    float: right;
 }
 
 /* ---------- Verhaalscherm2 ---------- */
@@ -181,7 +191,8 @@ html{
 
 /* ------- Image map ------ */
 .svg-kamer-1{
-    border: 10px solid red;
+    border: 10px solid var(--mars1);
+    border-radius: 1em;
 }
 
 
@@ -202,8 +213,8 @@ html{
 }
 
 .itemBox{
-    border: 6px solid #D8572A;
-    background-color: #505155;
+    border: 6px solid var(--mars1);
+    background-color: var(--mars2);
     border-radius: 10px;
     margin: auto;
     width: 100%;
