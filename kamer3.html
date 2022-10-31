@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    
     <title>Inventory test</title>
 </head>
 <body>
@@ -15,22 +16,13 @@
     </header>
     <main class="kamer--main">
         <section class="main--section--image">
-            <svg class="svg--kamer" viewBox="0 0 1066 725">
-                <image width="1066" height="725" href="img/room_test2.jpg"></image>
-                <a href="#" onclick="storeItem1()">
-                  <rect x="87" y="309" fill="#fff" opacity="0" width="59" height="83"></rect>
-                </a>
-                <a href="#" onclick="storeItem2()">
-                  <rect x="617" y="269" fill="#fff" opacity="0" width="50" height="89"></rect>
-                </a>
-                <a href="#" onclick="storeItem3()">
-                  <rect x="961" y="194" fill="#fff" opacity="0" width="55" height="77"></rect>
-                </a>
-              </svg>
-              <a class="image--arrow image--arrowleft" onclick="">&#10094;</a>
-              <a class="image--arrow image--arrowright" onclick="">&#10095;</a>
-              <a class="image--arrow image--arrowup" onclick="">&#708;</a>
-              <a class="image--arrow image--arrowdown" onclick="">&#709;</a>
+            <svg class="svg--kamer" id="svg_image3" viewBox="0 0 360 259">
+              <image width="360" height="259" href="img/spiralstaircase.jpg"></image>
+            </svg>
+            <!-- <a class="image--arrow image--arrowleft" onclick="">&#10094;</a>
+            <a class="image--arrow image--arrowright" onclick="">&#10095;</a> -->
+            <a class="image--arrow image--arrowup" id="arrow_kamer4" href="kamer4.html">&#708;</a>
+            <a class="image--arrow image--arrowdown" href="kamer2.html">&#709;</a> 
         </section>
         <section class="main--section--text">
           <p>Gekkigheid</p>
@@ -40,7 +32,7 @@
          <section class="footer--section">
             <figure class="itemBox" id="itemBox1"><img class="item_key" id="item1_key" src="img/item1_key.png" alt="Item 1"></figure>
             <figure class="itemBox" id="itemBox2"><img class="item_key" id="item2_key" src="img/item2_key.png" alt="Item 2"></figure>
-            <figure class="itemBox" id="itemBox3"><img class="item_key" id="item3_key" src="img/icon_flashlight.png" alt="Item 3"></figure>
+            <figure onclick="useItem3()" class="itemBox" id="itemBox3"><img class="item_key" id="item3_key" src="img/icon_flashlight.png" alt="Item 3"></figure>
         </section>
     </footer>
 </body>
