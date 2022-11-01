@@ -2,6 +2,7 @@ const item1 = document.getElementById('item1_key');
 const item2 = document.getElementById('item2_key');
 const item3 = document.getElementById('item3_key');
 
+
 const arrow_kamer4 = document.getElementById("arrow_kamer4");
 const image_item3 = document.getElementById("svg_image3");
 
@@ -53,4 +54,24 @@ function useItem3() {
 function clearStorage() {
     localStorage.clear();
     location.reload();
+}
+
+// numpad code
+let code = "";
+
+function numpad(num) {
+    if (code.length >= 4) numpadC();
+    code += String(num);
+    console.log(code);
+}
+function numpadC() { //cancel
+    code = "";
+}
+function numpadE() { //enter
+    if (code !== "3040") { // als code niet correct is
+        numpadC();
+        return;
+    }
+    //als code wel correct
+    window.location = "kamer2.html";
 }
