@@ -693,15 +693,6 @@ html{
     left: 0;
 }
 
-.lockpickachter{
-    display: block;
-    position: relative;
-    margin: auto;
-    width: 80%;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
-
 .pickimage{
     position: absolute;
     top: -19%;
