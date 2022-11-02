@@ -384,6 +384,7 @@ html{
     max-height: 70%;
     max-width: 90vw;
     margin: 1em auto;
+    object-fit: contain;
 }
 
 .main--section--text{
@@ -410,6 +411,7 @@ html{
             user-select: none;
     -webkit-text-stroke: 1px black;
     text-decoration: none;
+    object-fit: none;
 }
 
 .image--arrowright, .image--arrowleft{
@@ -557,6 +559,7 @@ html{
     margin: 0 auto;
     max-height: 70vh;
     max-width: 80vw;
+    object-fit: contain;
 }
 
 #svg_image3{
