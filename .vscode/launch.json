@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open verhaalscherm1.html",
+            "file": "c:\\Users\\seans\\OneDrive\\Documenten\\GitHub\\IPIAT2_EscapeRoom\\seanlockpick1.html"
+        }
+    ]
+}
