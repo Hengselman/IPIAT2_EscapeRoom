@@ -19,8 +19,10 @@ window.onload = (event) => {
         item3.style.display = "none";
     }
     if (localStorage.getItem('use_item3')){
-        image_item3.style.filter = "brightness(1)";
-        arrow_kamer4.style.display = "block";
+        if (image_item3 != null){
+            image_item3.style.filter = "brightness(1)";
+            arrow_kamer4.style.display = "block";
+        }
     }
 }
 
