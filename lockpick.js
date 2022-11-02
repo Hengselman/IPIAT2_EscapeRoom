@@ -4,20 +4,27 @@ const kiezen = document.querySelector(' .kiezen button');
 const lockshow = document.getElementById('item2_key');
 const indienen = document.getElementById('indienen');
 var countNumber = parseInt("-1");
-const versie = `lockpick${countNumber}.png`;
+const versie = `lockpick${countNumber}.webp`;
 var rightNumber = Math.floor(Math.random() * 8);
+var b = 0;
+var audio = new Audio("mp3/unlock.mp3");
 
 countOmhoog.addEventListener('click', countUp);
 countOmlaag.addEventListener('click', countDown);
 kiezen.addEventListener('click', choose);
 
 console.log(rightNumber);
+    
+
 
 function countUp(){
     if (countNumber < 7){
         countNumber++;
-        document.getElementById("pick").src = `img/lockpick${countNumber}-removebg-preview.png`;
-        console.log(`lockpick${countNumber}-removebg-preview.png`);
+        document.getElementById("pick").src = `img/lockpick${countNumber}-removebg-preview.webp`;
+        console.log(`lockpick${countNumber}-removebg-preview.webp`);
+        if (countNumber == rightNumber){
+            audio.play()
+        }
     }
     else {
         countNumber = -1;
@@ -28,8 +35,11 @@ function countUp(){
 function countDown(){
     if (countNumber > 0){
         countNumber--;
-        document.getElementById("pick").src = `img/lockpick${countNumber}-removebg-preview.png`;
-        console.log(`lockpick${countNumber}-removebg-preview.png`);
+        document.getElementById("pick").src = `img/lockpick${countNumber}-removebg-preview.webp`;
+        console.log(`lockpick${countNumber}-removebg-preview.webp`);
+        if (countNumber == rightNumber){
+            audio.play()
+        }
     }
     else {
         countNumber = 8;
@@ -39,10 +49,10 @@ function countDown(){
 
 function choose(){
     if (countNumber == rightNumber){
-    document.getElementById("indienen").href = "seanlockpick2.html";
-    console.log("testworthy")
+        document.getElementById("kiezen").onclick = "return true;";
+        console.log("testworthy")
     }
-    else{
+    else {
         alert('dat is niet de juiste ;)');
     }
 }
@@ -50,3 +60,4 @@ function choose(){
 function change() {
     var image = document.getElementById('pick');
 }
+

@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    
-    <title>Seansminigametest</title>
+    <title>Escape from Mars</title>
 </head>
 <body>
-    <header class="verhaalscherm--header">
-        <figure class="verhaalscherm--header--figure"><img class="verhaalscherm--logo" src="img/EfM_logo.png" alt="Escape from Mars logo foto"></figure>
+    <header>
+        <section class="options">
+            <div class = 'countOmlaag'>
+                <button> 
+                    <img class="verhaalscherm--arrow" src="img/icon_arrowleft.webp" alt="Een icon van een arrow">
+                </button>
+            </div>
+            <div class = 'countOmhoog'>
+                <button>
+                    <img class="verhaalscherm--arrow" src="img/icon_arrowright.webp" alt="Een icon van een arrow">
+                </button>
+            </div>
+            <a class = 'kiezen' id = 'kiezen' href = 'seanlockpick3.html' onclick="return false;">
+                <button> Choose</button>
+            </a>
+            <progress value="33" max="100"></progress>
+        </section>
     </header>
-    <div class="stars"></div>
     <main>
-        <svg viewBox="0 0 1033 1000" class="Schermbox">
-            <image width="1033" height="1000" href="img/dallefuturisticlock.png"></image>
-            <a href="willemkamerDeur.html" onclick="">
-                <rect x="340" y="290" fill="#fff" opacity="0" width="160" height="350"></rect>
-              </a>
-          </svg>
+        <section class="screen-main">
+            <div class="stars"></div>
+            <div class="shiny"></div>
+            <figure class="kamer--header--figure"><img class="verhaalscherm--logo" src="img/EfM_logo.webp" alt="Escape from Mars logo foto"></figure>
+            <section class="main--section--image">
+                <div class="parent">
+                    <img class="lockpickachter" src="img/dallefuturisticlock.webp" alt="foto van een slot">
+                    <img class = "pickimage" id="pick" src="img/lockpick0-removebg-preview.webp" alt="een lockpick gericht op het slot">
+                </div>
+            </section>
+        </section>
     </main>
-    <footer>
-         y
-    </footer>
 </body>
-<script src="main.js"></script>
+<script src="lockpick.js"></script>
 </html>

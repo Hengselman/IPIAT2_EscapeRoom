@@ -35,12 +35,12 @@ html{
 }
 
 .stars{
-    background: var(--space1) url(img/stars.png) repeat top center;
+    background: var(--space1) url(img/stars.webp) repeat top center;
     z-index: -2;
 }
 
 .shiny{
-    background: transparent url(img/shiny.png) repeat top center;
+    background: transparent url(img/shiny.webp) repeat top center;
     z-index: -1;
     animation: move-shiny 200s linear infinite;
 }
@@ -377,24 +377,32 @@ html{
 .lockpickachter{
     display: block;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: -20px;
+    margin: auto;
+    width: 80%;
+    object-fit: cover;
 }
 
 .pickimage{
     position: absolute;
-    top: -170px;
-    left: 55px;
-}
-
-.countNum{
-    color:#210535
+    top: -19%;
+    left: 12%;
+    width: 80%;
+    height: auto;
+    animation: shake 0.82s, shake-pause 3s;
+    transform: translate3d(0, 0, 0);
+    animation-delay: 3s, 3s;
+    animation-iteration-count: infinite;
 }
 
 .options{
     background-color: #DB7c26;
     overflow: hidden;
+    position:fixed;
+    bottom: 0px;
+}
+
+.countNum{
+    color:#210535
 }
 
 /* ------- Prototyping --------- */
@@ -414,6 +422,39 @@ button{
     }
 }
 
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+
+      100%{
+
+      }
+    }
+
+    @keyframes shake-pause {
+        50% {
+          transform-origin: 12vmin center;
+        }
+        50.01% {
+          transform-origin: center center;
+        }
+        100% {
+          transform-origin: center center;
+        }
+      }
 
 /* ------------ Responsive ------------- */
 @media screen and (max-height: 650px) {
