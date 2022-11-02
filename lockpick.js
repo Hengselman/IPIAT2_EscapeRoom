@@ -11,7 +11,11 @@ var audio = new Audio("mp3/unlock.mp3");
 
 countOmhoog.addEventListener('click', countUp);
 countOmlaag.addEventListener('click', countDown);
-kiezen.addEventListener('click', choose);
+
+if (kiezen == null) {
+    kiezen.addEventListener('click', choose);
+}
+
 
 console.log(rightNumber);
     
