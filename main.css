@@ -201,7 +201,7 @@ html{
     max-height: 30%;
     width: 80%;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1em;
     border: 0.5em solid var(--mars1);
     border-radius: 1em;
     background-color: var(--mars2);
