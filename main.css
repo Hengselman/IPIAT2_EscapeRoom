@@ -695,10 +695,11 @@ html{
 
 .pickimage{
     position: absolute;
-    top: -19%;
-    left: 12%;
+    top: -55%;
+    left: 10%;
     width: 80%;
     height: auto;
+    pointer-events: none;
     -webkit-animation: shake 0.82s, shake-pause 3s;
             animation: shake 0.82s, shake-pause 3s;
     -webkit-transform: translate3d(0, 0, 0);
@@ -710,14 +711,32 @@ html{
 }
 
 .options{
-    background-color: #DB7c26;
-    overflow: hidden;
-    position:fixed;
-    bottom: 0;
+    background-color: #D8572A;
+    max-width:90vw;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position: inline-block;
+
 }
 
 .countNum{
     color:#210535
+}
+
+.verhaalscherm--arrow{
+    background-color: #6CC417;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.kiezen{
+    color: #6CC417;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* ------- Animations -------- */
