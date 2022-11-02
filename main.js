@@ -75,5 +75,5 @@ function numpadE() { //enter
         return;
     }
     //als code wel correct
-    window.location = "kamer2.html";
+    window.location = "verhaalscherm3.html";
 }
