@@ -840,7 +840,7 @@ html{
       }
 
 /* ------------ Responsive ------------- */
-@media screen and (min-height: 650px) {
+@media screen and (min-height: 300px) {
     .main--section--text{
         display: block;
     }
