@@ -1,6 +1,6 @@
 const countOmhoog = document.querySelector('.countOmhoog button');
 const countOmlaag = document.querySelector('.countOmlaag button');
-const kiezen = document.querySelector(' .kiezen button');
+const kiezen = document.querySelector(' .kiezen button')
 const lockshow = document.getElementById('item2_key');
 const indienen = document.getElementById('indienen');
 var countNumber = parseInt("-1");
@@ -11,10 +11,7 @@ var audio = new Audio("mp3/unlock.mp3");
 
 countOmhoog.addEventListener('click', countUp);
 countOmlaag.addEventListener('click', countDown);
-
-if (kiezen == null) {
-    kiezen.addEventListener('click', choose);
-}
+kiezen.addEventListener('click', choose)
 
 console.log(rightNumber);
 
