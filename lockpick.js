@@ -16,10 +16,7 @@ if (kiezen == null) {
     kiezen.addEventListener('click', choose);
 }
 
-
 console.log(rightNumber);
-    
-
 
 function countUp(){
     if (countNumber < 7){
@@ -60,8 +57,3 @@ function choose(){
         alert('dat is niet de juiste ;)');
     }
 }
-
-function change() {
-    var image = document.getElementById('pick');
-}
-
