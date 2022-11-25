@@ -458,13 +458,10 @@ html{
 
 
 /* ----------- willem kamer ----------- */
-@media screen and (min-width: 400px) {
-
-}
 
 .puzzelkamer--main{
     width: 90vw;
-    height: 70vh;
+    height: 110vh;
     margin: 5vh 5vw;
     padding: 2em;
     border: 1em solid var(--mars1);
@@ -478,6 +475,7 @@ html{
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 1em;
+    object-fit: contain;
 }
 
 .puzzelkamer--main > *:nth-child(1){
